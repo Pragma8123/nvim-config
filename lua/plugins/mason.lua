@@ -26,7 +26,7 @@ return {
         "tailwindcss",
         "texlab",
         "tsserver",
-        "vuels",
+        "volar",
         "yamlls",
         -- add more arguments for adding more language servers
       })
