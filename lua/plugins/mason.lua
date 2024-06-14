@@ -42,6 +42,7 @@ return {
         "prettier",
         "stylua",
         "eslint",
+        "black",
         -- add more arguments for adding more null-ls sources
       })
     end,
