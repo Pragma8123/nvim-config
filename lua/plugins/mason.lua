@@ -16,6 +16,7 @@ return {
         "dockerls",
         "gopls",
         "html",
+        "intelephense",
         "jsonls",
         "lua_ls",
         "marksman",
