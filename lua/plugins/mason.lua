@@ -28,7 +28,7 @@ return {
         "tsserver",
         "volar",
         "yamlls",
-        "zig",
+        "zls",
         -- add more arguments for adding more language servers
       })
     end,
