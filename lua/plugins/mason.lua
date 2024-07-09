@@ -28,6 +28,7 @@ return {
         "svelte",
         "tailwindcss",
         "templ",
+        "terraformls",
         "texlab",
         "tsserver",
         "volar",
