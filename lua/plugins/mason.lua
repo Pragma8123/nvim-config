@@ -14,7 +14,6 @@ return {
         "intelephense",
         "lua_ls",
         "omnisharp_mono",
-        "pyright",
         "rust_analyzer",
         "svelte",
         "templ",
@@ -35,7 +34,6 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "stylua",
         "eslint",
-        "black",
         "yamlfmt",
         "yamllint",
         -- add more arguments for adding more null-ls sources
@@ -50,7 +48,6 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "chrome",
         "node2",
-        "python",
         -- add more arguments for adding more debuggers
       })
     end,
