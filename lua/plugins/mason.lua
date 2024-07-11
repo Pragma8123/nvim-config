@@ -49,6 +49,8 @@ return {
         "stylua",
         "eslint",
         "black",
+        "yamlfmt",
+        "yamllint",
         -- add more arguments for adding more null-ls sources
       })
     end,
