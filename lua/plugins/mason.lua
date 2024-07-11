@@ -13,7 +13,6 @@ return {
         "htmx",
         "intelephense",
         "lua_ls",
-        "marksman",
         "omnisharp_mono",
         "pyright",
         "rust_analyzer",

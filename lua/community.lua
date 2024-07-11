@@ -17,5 +17,6 @@ return {
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.markdown" },
   -- import/override with your plugins folder
 }
