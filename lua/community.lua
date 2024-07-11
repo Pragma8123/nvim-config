@@ -28,5 +28,7 @@ return {
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
 
+  -- Git
+  { import = "astrocommunity.git.blame-nvim" },
   -- import/override with your plugins folder
 }

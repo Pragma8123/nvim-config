@@ -12,6 +12,7 @@
   "astrotheme": { "branch": "main", "commit": "48b8cb48d5d9fad48324eec2a101a5fa2cac57f9" },
   "astroui": { "branch": "main", "commit": "d958ad0f9d9d198e6f0f108e14e2474e48ce1204" },
   "better-escape.nvim": { "branch": "master", "commit": "7619e1e582d8ae43c8860dfc183455374a11aa85" },
+  "blame.nvim": { "branch": "main", "commit": "dedbcdce857f708c63f261287ac7491a893912d0" },
   "catppuccin": { "branch": "main", "commit": "7946d1a195c66fed38b3e34f9fa8e0c5a2da0700" },
   "clangd_extensions.nvim": { "branch": "main", "commit": "a8500531c4ed3a207e744a374ea038744a0f93eb" },
   "cmake-tools.nvim": { "branch": "master", "commit": "4be3c229fe932043fd83ad52fdf0ba9af7297789" },
