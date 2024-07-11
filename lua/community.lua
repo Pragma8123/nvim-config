@@ -10,5 +10,6 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.tailwindcss" },
+  { import = "astrocommunity.pack.cpp" },
   -- import/override with your plugins folder
 }
