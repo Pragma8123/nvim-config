@@ -17,7 +17,6 @@ return {
         "rust_analyzer",
         "texlab",
         "volar",
-        "yamlls",
         "zls",
         -- add more arguments for adding more language servers
       })
@@ -32,8 +31,6 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "stylua",
         "eslint",
-        "yamlfmt",
-        "yamllint",
         -- add more arguments for adding more null-ls sources
       })
     end,

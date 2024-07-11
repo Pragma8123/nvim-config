@@ -21,5 +21,6 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.templ" },
+  { import = "astrocommunity.pack.yaml" },
   -- import/override with your plugins folder
 }
