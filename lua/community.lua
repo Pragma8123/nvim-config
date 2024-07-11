@@ -5,8 +5,9 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
+
+  -- Community Language Packs
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.tailwindcss" },
@@ -23,5 +24,9 @@ return {
   { import = "astrocommunity.pack.templ" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
+
+  -- Color Schemes
+  { import = "astrocommunity.colorscheme.catppuccin" },
+
   -- import/override with your plugins folder
 }
