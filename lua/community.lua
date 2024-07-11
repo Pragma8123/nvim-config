@@ -19,5 +19,6 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.svelte" },
   -- import/override with your plugins folder
 }

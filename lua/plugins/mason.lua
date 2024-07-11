@@ -15,7 +15,6 @@ return {
         "lua_ls",
         "omnisharp_mono",
         "rust_analyzer",
-        "svelte",
         "templ",
         "texlab",
         "volar",
