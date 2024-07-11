@@ -12,7 +12,6 @@ return {
         "ansiblels",
         "bashls",
         "cmake",
-        "html",
         "htmx",
         "intelephense",
         "jsonls",
