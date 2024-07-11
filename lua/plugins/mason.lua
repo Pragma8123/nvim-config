@@ -13,7 +13,6 @@ return {
         "bashls",
         "clangd",
         "cmake",
-        "cssls",
         "dockerls",
         "gopls",
         "html",
@@ -26,7 +25,6 @@ return {
         "pyright",
         "rust_analyzer",
         "svelte",
-        "tailwindcss",
         "templ",
         "texlab",
         "volar",
@@ -43,7 +41,6 @@ return {
     opts = function(_, opts)
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        "prettier",
         "stylua",
         "eslint",
         "black",

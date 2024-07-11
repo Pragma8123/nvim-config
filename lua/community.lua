@@ -9,5 +9,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.tailwindcss" },
   -- import/override with your plugins folder
 }
