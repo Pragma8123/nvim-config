@@ -14,5 +14,6 @@ return {
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.bash" },
   -- import/override with your plugins folder
 }
