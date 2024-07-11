@@ -71,5 +71,6 @@
   "tsc.nvim": { "branch": "main", "commit": "548410076322307c80646857778aee050d903b8c" },
   "venv-selector.nvim": { "branch": "regexp", "commit": "8efa1e0a8da516f5194c5e4df3362685a90fb763" },
   "vim-illuminate": { "branch": "master", "commit": "5eeb7951fc630682c322e88a9bbdae5c224ff0aa" },
-  "which-key.nvim": { "branch": "main", "commit": "0539da005b98b02cf730c1d9da82b8e8edb1c2d2" }
+  "which-key.nvim": { "branch": "main", "commit": "0539da005b98b02cf730c1d9da82b8e8edb1c2d2" },
+  "zig-tools.nvim": { "branch": "master", "commit": "78a85278fe5d480da2f01df4db898757d7e953b5" }
 }

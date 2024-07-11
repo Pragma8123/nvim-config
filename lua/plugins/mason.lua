@@ -17,7 +17,6 @@ return {
         "rust_analyzer",
         "texlab",
         "volar",
-        "zls",
         -- add more arguments for adding more language servers
       })
     end,
