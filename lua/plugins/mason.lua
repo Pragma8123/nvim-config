@@ -30,7 +30,6 @@ return {
         "templ",
         "terraformls",
         "texlab",
-        "tsserver",
         "volar",
         "yamlls",
         "zls",
