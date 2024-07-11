@@ -12,7 +12,6 @@ return {
         "cmake",
         "htmx",
         "intelephense",
-        "jsonls",
         "lua_ls",
         "marksman",
         "omnisharp_mono",
