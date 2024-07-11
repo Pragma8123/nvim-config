@@ -8,5 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.terraform" },
   -- import/override with your plugins folder
 }
