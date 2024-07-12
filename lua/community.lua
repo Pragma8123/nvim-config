@@ -24,6 +24,7 @@ return {
   { import = "astrocommunity.pack.templ" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
+  { import = "astrocommunity.pack.toml" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
