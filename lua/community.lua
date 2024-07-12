@@ -28,6 +28,7 @@ return {
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
+  { import = "astrocommunity.colorscheme.tokyodark-nvim" },
 
   -- Git
   { import = "astrocommunity.git.blame-nvim" },
