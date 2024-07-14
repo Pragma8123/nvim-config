@@ -27,6 +27,7 @@ return {
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.godot" },
+  { import = "astrocommunity.pack.cs" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },

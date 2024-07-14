@@ -13,7 +13,6 @@ return {
         "htmx",
         "intelephense",
         "lua_ls",
-        "omnisharp_mono",
         "rust_analyzer",
         "texlab",
         "volar",
