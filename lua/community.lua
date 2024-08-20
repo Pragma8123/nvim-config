@@ -29,6 +29,7 @@ return {
   { import = "astrocommunity.pack.godot" },
   { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.helm" },
+  { import = "astrocommunity.pack.full-dadbod" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
