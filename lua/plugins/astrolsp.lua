@@ -54,15 +54,20 @@ return {
           },
         },
       },
-      -- yamlls = {
-      --   settings = {
-      --     yaml = {
-      --       schemas = {
-      --         kubernetes = "*.yaml",
-      --       },
-      --     },
-      --   },
-      -- },
+      yamlls = {
+        settings = {
+          redhat = {
+            telemetry = {
+              enabled = false,
+            },
+          },
+          yaml = {
+            schemaStore = {
+              enable = true,
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {
