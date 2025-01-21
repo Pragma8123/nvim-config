@@ -7,4 +7,9 @@ return {
   -- {
   --   "github/copilot.vim",
   -- },
+  {
+    "Freedzone/kerbovim",
+    name = "kerbovim",
+    lazy = false,
+  },
 }
