@@ -32,6 +32,7 @@ return {
   { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.sql" },
+  { import = "astrocommunity.pack.nix" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
