@@ -26,10 +26,8 @@ return {
   { import = "astrocommunity.pack.zig" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.godot" },
   { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.helm" },
-  { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.nix" },
@@ -39,7 +37,5 @@ return {
   { import = "astrocommunity.colorscheme.tokyodark-nvim" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
 
-  -- Git
-  { import = "astrocommunity.git.blame-nvim" },
   -- import/override with your plugins folder
 }
