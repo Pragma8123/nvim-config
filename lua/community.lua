@@ -24,7 +24,6 @@ return {
   { import = "astrocommunity.pack.templ" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
-  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.helm" },
