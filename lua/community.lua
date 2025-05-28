@@ -30,6 +30,10 @@ return {
   { import = "astrocommunity.pack.xml" },
   { import = "astrocommunity.pack.sql" },
   { import = "astrocommunity.pack.nix" },
+  { import = "astrocommunity.pack.prisma" },
+
+  -- Recipes
+  { import = "astrocommunity.recipes.vscode" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },
