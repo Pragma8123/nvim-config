@@ -11,6 +11,7 @@ return {
   -- codecompanion
   {
     "olimorris/codecompanion.nvim",
+    lazy = false,
     opts = {
       adapters = {
         openwebui = function()
@@ -74,14 +75,38 @@ return {
       strategies = {
         chat = {
           adapter = "openwebui",
+          opts = {
+            completion_provider = "cmp",
+          },
         },
         inline = {
           adapter = "openwebui",
+          keymaps = {
+            accept_change = {
+              modes = { n = "ga" },
+              description = "Accept the suggested change",
+            },
+            reject_change = {
+              modes = { n = "gr" },
+              description = "Reject the suggested change",
+            },
+          },
         },
         cmd = {
           adapter = "openwebui",
         },
       },
+      display = {
+        action_pallette = {
+          opts = {
+            show_default_actions = true,
+            show_default_prompt_library = true,
+          },
+        },
+      },
+    },
+    keys = {
+      { "<Leader>a", "<cmd>CodeCompanionChat Toggle<cr>", desc = "Toggle Code Companion Chat" },
     },
     dependencies = {
       "nvim-lua/plenary.nvim",
