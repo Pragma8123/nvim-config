@@ -23,7 +23,7 @@ return {
             },
             schema = {
               model = {
-                default = "qwen3:8b",
+                default = "qwen2.5-coder:7b",
               },
               temperature = {
                 order = 2,
