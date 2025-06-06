@@ -23,7 +23,7 @@ return {
             },
             schema = {
               model = {
-                default = "devstral:latest",
+                default = "qwen3:8b",
               },
               temperature = {
                 order = 2,
