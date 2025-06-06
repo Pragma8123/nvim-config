@@ -8,6 +8,37 @@ return {
   --   "github/copilot.vim",
   -- },
 
+  -- render-markdown
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = { "markdown", "codecompanion" },
+  },
+
+  -- mini-diff
+  {
+    "echasnovski/mini.diff",
+    config = function()
+      local diff = require "mini.diff"
+      diff.setup {
+        source = diff.gen_source.none(),
+      }
+    end,
+  },
+
+  -- img-clip
+  {
+    "HakonHarnes/img-clip.nvim",
+    opts = {
+      filetypes = {
+        codecompanion = {
+          prompt_for_file_name = false,
+          template = "[Image]($FILE_PATH)",
+          use_absolute_path = true,
+        },
+      },
+    },
+  },
+
   -- codecompanion
   {
     "olimorris/codecompanion.nvim",
