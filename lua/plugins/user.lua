@@ -45,6 +45,13 @@ return {
     lazy = false,
     opts = {
       adapters = {
+        openai = function()
+          return require("codecompanion.adapters").extend("openai", {
+            env = {
+              api_key = os.getenv "OPENAI_API_KEY",
+            },
+          })
+        end,
         openwebui = function()
           return require("codecompanion.adapters").extend("openai_compatible", {
             env = {
