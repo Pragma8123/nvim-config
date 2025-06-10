@@ -33,6 +33,7 @@ return {
 
   -- Recipes
   { import = "astrocommunity.recipes.vscode" },
+  { import = "astrocommunity.recipes.ai" },
 
   -- Color Schemes
   { import = "astrocommunity.colorscheme.catppuccin" },

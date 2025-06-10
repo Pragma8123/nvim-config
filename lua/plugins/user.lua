@@ -112,13 +112,13 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "openwebui",
+          adapter = "copilot",
           opts = {
             completion_provider = "cmp",
           },
         },
         inline = {
-          adapter = "openwebui",
+          adapter = "copilot",
           keymaps = {
             accept_change = {
               modes = { n = "ga" },
@@ -131,7 +131,7 @@ return {
           },
         },
         cmd = {
-          adapter = "openwebui",
+          adapter = "copilot",
         },
       },
       display = {
@@ -151,4 +151,81 @@ return {
       "nvim-treesitter/nvim-treesitter",
     },
   },
+
+  -- copilot
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    build = ":Copilot auth",
+    event = "BufReadPost",
+    opts = {
+      suggestion = {
+        auto_trigger = true,
+        keymap = {
+          accept = false,
+        },
+        enabled = true,
+      },
+    },
+    specs = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          options = {
+            g = {
+              ai_accept = function()
+                if require("copilot.suggestion").is_visible() then require("copilot.suggestion").accept() end
+              end,
+            },
+          },
+        },
+      },
+    },
+  },
+
+  -- llm.vim
+  -- {
+  --   "huggingface/llm.nvim",
+  --   opts = {
+  --     backend = "openai",
+  --     api_token = os.getenv "OPENWEBUI_API_KEY",
+  --     url = os.getenv "OPENWEBUI_API_URL",
+  --     model = "qwen2.5-coder:7b",
+  --     accept_keymap = nil,
+  --     dismiss_Keymap = nil,
+  --     context_window = 1024,
+  --     enable_suggestions_on_startup = true,
+  --     enable_suggestions_on_files = "*",
+  --     disable_url_path_completion = false,
+  --     debounce_ms = 150,
+  --     tokens_to_clear = { "<|endoftext|>" },
+  --     fim = {
+  --       enabled = true,
+  --       prefix = "<fim_prefix>",
+  --       middle = "<fim_middle>",
+  --       suffix = "<fim_suffix>",
+  --     },
+  --     request_body = {
+  --       parameters = {
+  --         max_new_tokens = 60,
+  --         temperature = 0.2,
+  --         top_p = 0.95,
+  --       },
+  --     },
+  --   },
+  --   specs = {
+  --     {
+  --       "AstroNvim/astrocore",
+  --       opts = {
+  --         options = {
+  --           g = {
+  --             ai_accept = function()
+  --               if require("llm.completion").shown_suggestion ~= nil then require("llm.completion").complete() end
+  --             end,
+  --           },
+  --         },
+  --       },
+  --     },
+  --   },
+  -- },
 }
