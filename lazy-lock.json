@@ -41,6 +41,7 @@
   "mason.nvim": { "branch": "main", "commit": "fc98833b6da5de5a9c5b1446ac541577059555be" },
   "mini.bufremove": { "branch": "main", "commit": "285bdac9596ee7375db50c0f76ed04336dcd2685" },
   "mini.diff": { "branch": "main", "commit": "f7bcd3cb4561f7d3a02ae9afafeda899c82f7108" },
+  "minuet-ai.nvim": { "branch": "main", "commit": "094a23ed3b0c679b73181087d0ad8a3451411e09" },
   "neo-tree.nvim": { "branch": "main", "commit": "f481de16a0eb59c985abac8985e3f2e2f75b4875" },
   "neoconf.nvim": { "branch": "main", "commit": "f630568a4d04154803886f21ca60923f12709f0f" },
   "neodev.nvim": { "branch": "main", "commit": "1f4ebcc10852518166ce165e57d425a4265a10d4" },

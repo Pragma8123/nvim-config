@@ -112,13 +112,13 @@ return {
       },
       strategies = {
         chat = {
-          adapter = "copilot",
+          adapter = "openwebui",
           opts = {
             completion_provider = "cmp",
           },
         },
         inline = {
-          adapter = "copilot",
+          adapter = "openwebui",
           keymaps = {
             accept_change = {
               modes = { n = "ga" },
@@ -131,7 +131,7 @@ return {
           },
         },
         cmd = {
-          adapter = "copilot",
+          adapter = "openwebui",
         },
       },
       display = {
@@ -153,64 +153,18 @@ return {
   },
 
   -- copilot
-  {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    build = ":Copilot auth",
-    event = "BufReadPost",
-    opts = {
-      suggestion = {
-        auto_trigger = true,
-        keymap = {
-          accept = false,
-        },
-        enabled = true,
-      },
-    },
-    specs = {
-      {
-        "AstroNvim/astrocore",
-        opts = {
-          options = {
-            g = {
-              ai_accept = function()
-                if require("copilot.suggestion").is_visible() then require("copilot.suggestion").accept() end
-              end,
-            },
-          },
-        },
-      },
-    },
-  },
-
-  -- llm.vim
   -- {
-  --   "huggingface/llm.nvim",
+  --   "zbirenbaum/copilot.lua",
+  --   cmd = "Copilot",
+  --   build = ":Copilot auth",
+  --   event = "BufReadPost",
   --   opts = {
-  --     backend = "openai",
-  --     api_token = os.getenv "OPENWEBUI_API_KEY",
-  --     url = os.getenv "OPENWEBUI_API_URL",
-  --     model = "qwen2.5-coder:7b",
-  --     accept_keymap = nil,
-  --     dismiss_Keymap = nil,
-  --     context_window = 1024,
-  --     enable_suggestions_on_startup = true,
-  --     enable_suggestions_on_files = "*",
-  --     disable_url_path_completion = false,
-  --     debounce_ms = 150,
-  --     tokens_to_clear = { "<|endoftext|>" },
-  --     fim = {
-  --       enabled = true,
-  --       prefix = "<fim_prefix>",
-  --       middle = "<fim_middle>",
-  --       suffix = "<fim_suffix>",
-  --     },
-  --     request_body = {
-  --       parameters = {
-  --         max_new_tokens = 60,
-  --         temperature = 0.2,
-  --         top_p = 0.95,
+  --     suggestion = {
+  --       auto_trigger = true,
+  --       keymap = {
+  --         accept = false,
   --       },
+  --       enabled = true,
   --     },
   --   },
   --   specs = {
@@ -220,7 +174,7 @@ return {
   --         options = {
   --           g = {
   --             ai_accept = function()
-  --               if require("llm.completion").shown_suggestion ~= nil then require("llm.completion").complete() end
+  --               if require("copilot.suggestion").is_visible() then require("copilot.suggestion").accept() end
   --             end,
   --           },
   --         },
@@ -228,4 +182,44 @@ return {
   --     },
   --   },
   -- },
+
+  -- minuet.nvim
+  {
+    "milanglacier/minuet-ai.nvim",
+    lazy = false,
+    config = function()
+      require("minuet").setup {
+        provider = "openai_compatible",
+        n_completions = 1,
+        provider_options = {
+          openai_compatible = {
+            api_key = function() return os.getenv "OPENWEBUI_API_KEY" end,
+            name = "openwebui",
+            end_point = os.getenv "OPENWEBUI_API_URL" .. "/v1/chat/completions",
+            model = "qwen2.5-coder:7b",
+            stream = true,
+          },
+        },
+        virtualtext = {
+          auto_trigger_ft = { "*" },
+        },
+      }
+    end,
+    specs = {
+      {
+        "AstroNvim/astrocore",
+        opts = {
+          options = {
+            g = {
+              ai_accept = function()
+                if require("minuet.virtualtext").action.is_visible() then
+                  require("minuet.virtualtext").action.accept()
+                end
+              end,
+            },
+          },
+        },
+      },
+    },
+  },
 }
