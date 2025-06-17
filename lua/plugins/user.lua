@@ -57,8 +57,8 @@ return {
             env = {
               url = os.getenv "OPENWEBUI_API_URL",
               api_key = os.getenv "OPENWEBUI_API_KEY",
-              chat_url = "/v1/chat/completions",
-              models_endpoint = "/v1/models",
+              chat_url = "/ollama/v1/chat/completions",
+              models_endpoint = "/ollama/v1/models",
             },
             schema = {
               model = {
