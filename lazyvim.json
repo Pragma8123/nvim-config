@@ -1,5 +1,7 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.coding.mini-comment",
+    "lazyvim.plugins.extras.dap.core",
     "lazyvim.plugins.extras.formatting.prettier",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.cmake",
@@ -27,3 +29,4 @@
   },
   "version": 8
 }
+
